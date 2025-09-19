@@ -1,3 +1,4 @@
+/* Background for the page */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -6,7 +7,7 @@ body {
 }
 
 /* Header */
-.header {
+header {
   text-align: center;
   background-color: #1B263B;
   color: white;
@@ -15,93 +16,55 @@ body {
   font-weight: bold;
 }
 
-/* Header */
-.header {
-  background-color: #1B263B;
-  color: white;
-}
-
-/* Responsive font tweak */
-@media (max-width: 768px) {
-  .header h1 {
-    font-size: 1.8rem; /* smaller on tablets */
-  }
-}
-
-@media (max-width: 576px) {
-  .header h1 {
-    font-size: 1.4rem; /* smaller on phones */
-    line-height: 1.3;
-  }
-}
-
-
-/* Table */
-.novel-table {
-  margin-top: 15px;
-  border: 5px solid #000;
-  border-collapse: collapse;
-  background-color: #faebc8;
-}
-
-.novel-cell {
-  border: 2px solid #000;
-  text-align: center;
-  padding: 10px;
-}
-
-/* Images */
+/* Global img hover effect */
 img {
-  border: 2px solid #000;
-  border-radius: 20px;
   transition: transform 0.3s ease;
+  border-radius: 20px;
 }
 
 img:hover {
-  transform: scale(1.03);
+  transform: scale(1.03); /* slightly enlarge */
 }
 
-/* Image sizes */
+/* Big image (ORV) */
 .big-img {
   width: 310px;
   height: 450px;
+  border: 2px solid black;
+  object-fit: cover; /* keeps proportions, crops if needed */
 }
 
+/* Small images (all others) */
 .small-img {
   width: 150px;
   height: 220px;
+  border: 2px solid black;
+  object-fit: cover; /* fills box without stretching */
 }
 
-/* Captions */
+/* Table styling */
+.table-container {
+  margin-top: 15px;
+  overflow-x: auto; /* responsive scroll for small screens */
+}
+
+.novels-table {
+  border: 5px solid black;
+  border-collapse: collapse;
+  background-color: #faebc8;
+  margin: auto;
+}
+
+.novels-table td {
+  border: 2px solid black;
+  text-align: center;
+  padding: 5px;
+  vertical-align: top;
+}
+
+/* Captions under each cover */
 .caption {
   margin-top: 5px;
   font-size: 14px;
   font-weight: bold;
 }
-
-/* Table images */
-.big-img {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  border-radius: 8px;
-}
-
-.small-img {
-  width: 100%;
-  max-width: 200px;
-  height: auto;
-  border-radius: 8px;
-}
-
-/* Table responsiveness */
-.table-responsive {
-  overflow-x: auto;
-}
-
-.novels-table td {
-  background-color: #f5f0dc;
-  vertical-align: top;
-  padding: 10px;
-}
-

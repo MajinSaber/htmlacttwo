@@ -5,87 +5,103 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Fav Novels</title>
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    img {
+      transition: transform 0.3s ease;
+      border-radius: 20px;
+    }
+    img:hover {
+      transform: scale(1.03);
+    }
+    .caption {
+      margin-top: 5px;
+      font-weight: bold;
+    }
+  </style>
 </head>
 
-<body>
+<body style="margin:0; font-family:Arial, sans-serif; background: url('BG.jpg') no-repeat center center fixed; background-size: cover;">
+
   <!-- Header -->
-  <div class="header">
+  <div style="text-align:center; background-color:#1B263B; color:white; padding:20px; font-size:28px; font-weight:bold;">
     <h1>My Favourite Novels/Web Novels</h1>
   </div>
 
-  <!-- Table -->
-  <table class="novel-table" align="center">
-    <tr>
-      <!-- Big Picture -->
-      <td colspan="2" rowspan="2" class="novel-cell">
-        <a href="https://www.webnovel.com/book/omniscient-reader's-viewpoint_30734262008911505" target="_blank">
-          <img src="ORV.jpg" alt="Omniscient Reader's Viewpoint" class="big-img">
-        </a>
-        <div class="caption">Omniscient Reader's Viewpoint</div>
-      </td>
+  <!-- Table Wrapper -->
+  <div class="container my-4">
+    <div class="table-responsive">
+      <table border="3" cellspacing="5" cellpadding="5" align="center" style="margin-top:15px; border:5px solid rgb(0, 0, 0); border-collapse:collapse; background-color:#faebc8;">
 
-      <td class="novel-cell">
-        <a href="https://www.webnovel.com/book/11022733006234505" target="_blank">
-          <img src="LOTM.jpg" alt="Lord of the Mysteries" class="small-img">
-        </a>
-        <div class="caption">Lord of the Mysteries</div>
-      </td>
+        <tr>
+          <!-- Big Picture -->
+          <td colspan="2" rowspan="2" style="border:2px solid rgb(0, 0, 0); text-align:center;">
+            <a href="https://www.webnovel.com/book/omniscient-reader's-viewpoint_30734262008911505" target="_blank">
+              <img src="ORV.jpg" width="310" height="450" style="border:2px solid rgb(0, 0, 0);">
+            </a>
+            <div class="caption">Omniscient Reader's Viewpoint</div>
+          </td>
+          <td style="border:2px solid rgb(0, 0, 0); text-align:center;">
+            <a href="https://www.webnovel.com/book/11022733006234505" target="_blank">
+              <img src="LOTM.jpg" width="150" height="220" style="border:2px solid rgb(0, 0, 0);">
+            </a>
+            <div class="caption">Lord of the Mysteries</div>
+          </td>
+          <td style="border:2px solid rgb(0, 0, 0); text-align:center;">
+            <a href="https://www.webnovel.com/book/86-eighty-six_25684614605594305" target="_blank">
+              <img src="86.jpg" width="150" height="220" style="border:2px solid rgb(0, 0, 0);">
+            </a>
+            <div class="caption">Eighty-Six</div>
+          </td>
+        </tr>
 
-      <td class="novel-cell">
-        <a href="https://www.webnovel.com/book/86-eighty-six_25684614605594305" target="_blank">
-          <img src="86.jpg" alt="Eighty-Six" class="small-img">
-        </a>
-        <div class="caption">Eighty-Six</div>
-      </td>
-    </tr>
+        <tr>
+          <td style="border:2px solid rgb(0, 0, 0); text-align:center;">
+            <a href="https://www.webnovel.com/book/reverend-insanity_7996858406002505" target="_blank">
+              <img src="RI.jpg" width="150" height="220" style="border:2px solid rgb(0, 0, 0);">
+            </a>
+            <div class="caption">Reverend Insanity</div>
+          </td>
+          <td style="border:2px solid rgb(0, 0, 0); text-align:center;">
+            <a href="https://www.webnovel.com/book/shadow-slave_22196546206090805" target="_blank">
+              <img src="SS.jpg" width="150" height="220" style="border:2px solid rgb(0, 0, 0);">
+            </a>
+            <div class="caption">Shadow Slave</div>
+          </td>
+        </tr>
 
-    <tr>
-      <td class="novel-cell">
-        <a href="https://www.webnovel.com/book/reverend-insanity_7996858406002505" target="_blank">
-          <img src="RI.jpg" alt="Reverend Insanity" class="small-img">
-        </a>
-        <div class="caption">Reverend Insanity</div>
-      </td>
+        <tr>
+          <td style="border:2px solid rgb(0, 0, 0); text-align:center;">
+            <a href="https://www.webnovel.com/book/oregairu-shin-my-youth-romantic-comedy-is-wrong-as-i-expected-shin_30932112500365005" target="_blank">
+              <img src="Oregairu.jpg" width="150" height="220" style="border:2px solid rgb(0, 0, 0);">
+            </a>
+            <div class="caption">Oregairu</div>
+          </td>
+          <td style="border:2px solid rgb(0, 0, 0); text-align:center;">
+            <a href="https://www.webnovel.com/book/re-zero-kara-hajimeru-isekai-seikatsu-webnovel_32649673508955605" target="_blank">
+              <img src="Re0.jpg" width="150" height="220" style="border:2px solid rgb(0, 0, 0);">
+            </a>
+            <div class="caption">Re:Zero</div>
+          </td>
+          <td style="border:2px solid rgb(0, 0, 0); text-align:center;">
+            <a href="https://www.webnovel.com/book/mushoku-tensei-full-version_27096259406624705" target="_blank">
+              <img src="MT.jpg" width="150" height="220" style="border:2px solid rgb(0, 0, 0);">
+            </a>
+            <div class="caption">Mushoku Tensei</div>
+          </td>
+          <td style="border:2px solid rgb(0, 0, 0); text-align:center;">
+            <a href="https://www.webnovel.com/book/the-author's-pov_20524563005115705" target="_blank">
+              <img src="Authors pov.jpg" width="150" height="220" style="border:2px solid rgb(0, 0, 0);">
+            </a>
+            <div class="caption">Author's Pov</div>
+          </td>
+        </tr>
 
-      <td class="novel-cell">
-        <a href="https://www.webnovel.com/book/shadow-slave_22196546206090805" target="_blank">
-          <img src="SS.jpg" alt="Shadow Slave" class="small-img">
-        </a>
-        <div class="caption">Shadow Slave</div>
-      </td>
-    </tr>
+      </table>
+    </div>
+  </div>
 
-    <tr>
-      <td class="novel-cell">
-        <a href="https://www.webnovel.com/book/oregairu-shin-my-youth-romantic-comedy-is-wrong-as-i-expected-shin_30932112500365005" target="_blank">
-          <img src="Oregairu.jpg" alt="Oregairu" class="small-img">
-        </a>
-        <div class="caption">Oregairu</div>
-      </td>
-
-      <td class="novel-cell">
-        <a href="https://www.webnovel.com/book/re-zero-kara-hajimeru-isekai-seikatsu-webnovel_32649673508955605" target="_blank">
-          <img src="Re0.jpg" alt="Re:Zero" class="small-img">
-        </a>
-        <div class="caption">Re:Zero</div>
-      </td>
-
-      <td class="novel-cell">
-        <a href="https://www.webnovel.com/book/mushoku-tensei-full-version_27096259406624705" target="_blank">
-          <img src="MT.jpg" alt="Mushoku Tensei" class="small-img">
-        </a>
-        <div class="caption">Mushoku Tensei</div>
-      </td>
-
-      <td class="novel-cell">
-        <a href="https://www.webnovel.com/book/the-author's-pov_20524563005115705" target="_blank">
-          <img src="Authors pov.jpg" alt="Author's Pov" class="small-img">
-        </a>
-        <div class="caption">Author's Pov</div>
-      </td>
-    </tr>
-  </table>
 </body>
 </html>

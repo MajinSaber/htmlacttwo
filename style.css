@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url('BG.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  background-color: #1B263B;
+  color: white;
+  padding: 20px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Header */
+.header {
+  background-color: #1B263B;
+  color: white;
+}
+
+/* Responsive font tweak */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 1.8rem; /* smaller on tablets */
+  }
+}
+
+@media (max-width: 576px) {
+  .header h1 {
+    font-size: 1.4rem; /* smaller on phones */
+    line-height: 1.3;
+  }
+}
+
+
+/* Table */
+.novel-table {
+  margin-top: 15px;
+  border: 5px solid #000;
+  border-collapse: collapse;
+  background-color: #faebc8;
+}
+
+.novel-cell {
+  border: 2px solid #000;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Images */
+img {
+  border: 2px solid #000;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.03);
+}
+
+/* Image sizes */
+.big-img {
+  width: 310px;
+  height: 450px;
+}
+
+.small-img {
+  width: 150px;
+  height: 220px;
+}
+
+/* Captions */
+.caption {
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Table images */
+.big-img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.small-img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Table responsiveness */
+.table-responsive {
+  overflow-x: auto;
+}
+
+.novels-table td {
+  background-color: #f5f0dc;
+  vertical-align: top;
+  padding: 10px;
+}
+
